@@ -1,0 +1,25 @@
+@mixin authInput {
+  outline: none;
+  border-width: 0 0 1px;
+  border-color: #3369f3;
+}
+@mixin authPlaceholder {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+  color: #1e1e1e;
+}
+@mixin authLabel {
+  color: #999999;
+  font-size: 9px;
+  line-height: 9px;
+  font-weight: 500;
+}
+@mixin searchInput {
+  outline: none;
+  border: none;
+  background-color: #efefef;
+  width: 290px;
+  height: 32px;
+  border-radius: 5px;
+}

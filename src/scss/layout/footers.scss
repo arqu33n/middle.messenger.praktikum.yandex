@@ -1,0 +1,8 @@
+@mixin authFooter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  margin-top: auto;
+}
