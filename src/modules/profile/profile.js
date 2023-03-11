@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../scss/pages/profile.css">
-  <title>Document</title>
-</head>
-
-<body>
-  <div class="container profile">
+export const profileTemplate = ` <div class="container profile">
     <div class="profile__header">
       <div class="profile__header-avatar"></div>
       <div class="profile__header-name" id="display_name">Иван</div>
@@ -26,12 +14,9 @@
     <div class="profile__footer">
       <a href="" class="profile__footer-settings">Изменить данные</a>
       <a href="" class="profile__footer-password">Изменить пароль</a>
-      <a href="" class="profile__footer-close">Выйти</a>
+      <a href="/login" class="profile__footer-close">Выйти</a>
     </div>
-    <a class="return" href="/chat">
-      <img src="../../images/Group 202.png" alt="icon">
+     <a class="return" href="/chat">
+      <img src="/images/Group 202.png" alt="icon">
     </a>
-  </div>
-</body>
-
-</html>
+  </div>`;

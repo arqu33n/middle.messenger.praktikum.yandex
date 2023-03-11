@@ -1,5 +1,8 @@
 import Handlebars from "handlebars";
 import { loginTemplate } from "./login";
 export const loginLink = () => {
-  return Handlebars.compile(loginTemplate)();
+  const template = Handlebars.compile(loginTemplate)({
+    loginText: "Создать аккаунт",
+  });
+  return template;
 };

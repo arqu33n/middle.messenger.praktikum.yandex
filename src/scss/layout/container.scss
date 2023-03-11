@@ -10,3 +10,9 @@
   justify-content: left;
   height: 100vh;
 }
+@mixin errorContainer {
+  @include authContainer;
+}
+@mixin profileContainer {
+  @include authContainer;
+}

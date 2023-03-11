@@ -17,7 +17,7 @@ export const signinTemplate = `<div class="container">
         <label for="password">Пароль</label>
         <input type="password" class="signin__form-input" id="password" placeholder="Ваш пароль" />
         <label for="password">Пароль еще раз</label>
-        <input type="password" class="signin__form-input" id="password" placeholder="Ваш пароль" />
+        <input type="password" class="signin__form-input" id="confirmPassword" placeholder="Ваш пароль" />
       </form>
       <div class="signin__footer">
         <button class="signin__footer-button">Зарегистрироваться</button>

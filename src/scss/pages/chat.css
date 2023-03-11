@@ -1,9 +1,4 @@
-@font-face {
-  src: url(https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap);
-  font-family: "Inter";
-  font-style: normal;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -34,6 +29,8 @@ body {
   position: fixed;
   background-color: #fbfbfb;
   padding: 20px 10px;
+  left: 0;
+  top: 0;
 }
 
 .chatlist__header {
@@ -58,16 +55,16 @@ body {
 }
 
 .chatlist__header .profile-link {
+  text-decoration: none;
   font-weight: 500;
   font-size: 12px;
   line-height: 12px;
   text-align: right;
   color: #999999;
-  text-decoration: none;
 }
 
 .chatlist__header .profile-link::after {
-  content: url(/src/images/image1.svg);
+  content: url(/public/images/image1.svg);
   padding-left: 8px;
 }
 

@@ -1,16 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+
 @mixin sizing {
   box-sizing: border-box;
   margin: 0;
 }
-@font-face {
-  src: url(https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap);
-  font-family: "Inter";
-  font-style: normal;
-}
+
 $font: "Inter", sans-serif;
 
 @mixin loginFont {
-  font-family: "Inter", sans-serif;
+  font-family: $font;
   font-size: 20px;
   font-weight: 500;
 }

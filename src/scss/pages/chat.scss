@@ -19,6 +19,8 @@ body {
   position: fixed;
   background-color: #fbfbfb;
   padding: 20px 10px;
+  left: 0;
+  top: 0;
 }
 .chatlist__header {
   display: flex;
@@ -32,7 +34,7 @@ body {
     @include profileLink;
   }
   .profile-link::after {
-    content: url(/src/images/image1.svg);
+    content: url(/public/images/image1.svg);
     padding-left: 8px;
   }
 }
