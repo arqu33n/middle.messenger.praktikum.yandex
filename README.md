@@ -2,7 +2,7 @@
 
 ---
 
-Веб-приложение "чат" - мессенджер, написанный с помощью JavaScript, Typescript, CSS и API браузера.
+Веб-приложение "чат" - [мессенджер](https://thunderous-biscuit-cd1de9.netlify.app/), написанный с помощью JavaScript, Typescript, CSS и API браузера.
 
 В проект войдут стандартные функции чата:
 
