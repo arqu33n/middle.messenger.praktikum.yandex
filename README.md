@@ -23,7 +23,7 @@
 
 ---
 
-Макет интерфейса
+[Макет интерфейса](https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0%3A1&t=nn9jRgjBEC7bquDL-0)
 
 ![Макет](https://i.ibb.co/kXTwQjp/image-2023-03-12-14-58-18.png)
 
