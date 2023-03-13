@@ -1,0 +1,18 @@
+@mixin authContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+@mixin chatContainer {
+  display: flex;
+  justify-content: left;
+  height: 100vh;
+}
+@mixin errorContainer {
+  @include authContainer;
+}
+@mixin profileContainer {
+  @include authContainer;
+}

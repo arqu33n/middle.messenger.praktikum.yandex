@@ -1,0 +1,122 @@
+@import "../core/core.scss";
+@import "../components/input.scss";
+@import "../components/buttons.scss";
+@import "../layout/container.scss";
+@import "../layout/footers.scss";
+* {
+  @include sizing;
+}
+body {
+  @include sizing;
+}
+.container {
+  @include profileContainer;
+  flex-direction: column;
+}
+.profile {
+  @include mainFont;
+}
+.profile__header {
+  .profile__header-avatar {
+    width: 130px;
+    height: 130px;
+    background-color: #efefef;
+    border-radius: 100%;
+    margin-bottom: 20px;
+  }
+  .profile__header-name {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #1e1e1e;
+  }
+}
+
+.profile__content {
+  min-width: 510px;
+  margin-top: 60px;
+  .profile__content-item {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    color: #1e1e1e;
+    border-bottom: 1px solid #eaeaea;
+    span {
+      color: #999999;
+    }
+  }
+  .profile__content-item:last-child {
+    border-bottom: none;
+  }
+}
+.profile__footer {
+  display: flex;
+  min-width: 510px;
+  margin-top: 60px;
+  flex-direction: column;
+  justify-content: left;
+  a {
+    @include profileSettings;
+    padding: 10px 0px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .profile__footer-close {
+    color: #ff0000;
+    border-bottom: none;
+  }
+}
+.return {
+  @include return;
+}
+.profile__settings {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  min-width: 510px;
+  flex-direction: column;
+
+  label {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    color: #1e1e1e;
+    width: 100%;
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 0px;
+  }
+  div:nth-last-child(2) {
+    border-bottom: none;
+  }
+  .profile__settings-item {
+    outline: none;
+    border-width: 0px;
+    width: 100%;
+    margin-left: 30px;
+    text-align: right;
+  }
+  .profile__settings-item::placeholder {
+    @include authPlaceholder;
+    color: #999999;
+  }
+}
+.profile__settings-button {
+  border-bottom: none !important;
+  width: 100%;
+  margin-top: 30px;
+  a {
+    width: 100%;
+  }
+  button {
+    @include authButton;
+    width: 100%;
+  }
+}

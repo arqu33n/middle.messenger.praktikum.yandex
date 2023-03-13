@@ -1,0 +1,99 @@
+@import "../core/core.scss";
+@import "../components/modal.scss";
+@import "../components/input.scss";
+@import "../components/buttons.scss";
+@import "../layout/container.scss";
+@import "../layout/footers.scss";
+* {
+  @include sizing;
+}
+body {
+  @include sizing;
+}
+.login {
+  @include authModal;
+  @include loginFont;
+  display: flex;
+  align-items: center;
+  min-height: 450px;
+}
+.signin {
+  @include authModal;
+  @include loginFont;
+  display: flex;
+  align-items: center;
+  min-height: 615px;
+}
+.container {
+  @include authContainer;
+}
+.login__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.login__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  label {
+    @include authLabel;
+    // margin-bottom: 8px;
+  }
+  .login__form-input {
+    @include authInput;
+    padding: 7px 0px;
+    margin-bottom: 16px;
+  }
+  .login__form-input::placeholder {
+    @include authPlaceholder;
+  }
+}
+.login__footer {
+  @include authFooter;
+  .login__footer-button {
+    @include authButton;
+  }
+  .login__footer-registration {
+    @include authLink;
+    text-align: center;
+  }
+}
+
+.signin__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.signin__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  label {
+    @include authLabel;
+    // margin-bottom: 8px;
+  }
+  .signin__form-input {
+    @include authInput;
+    padding: 7px 0px;
+    margin-bottom: 16px;
+  }
+  .signin__form-input::placeholder {
+    @include authPlaceholder;
+  }
+}
+.signin__footer {
+  @include authFooter;
+  .signin__footer-button {
+    @include authButton;
+  }
+  .signin__footer-registration {
+    @include authLink;
+    text-align: center;
+  }
+}
