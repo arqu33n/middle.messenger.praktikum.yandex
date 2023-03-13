@@ -8,7 +8,16 @@ app.use(express.static("dist"));
 app.use(express.static("public"));
 
 app.get(
-  ["/", "/login", "/sign-in", "/profile", "/chat", "/not-found", "/error"],
+  [
+    "/",
+    "/login",
+    "/sign-in",
+    "/profile",
+    "/profile-settings",
+    "/chat",
+    "/not-found",
+    "/error",
+  ],
   (req, res) => {
     res.sendFile(path.join(__dirname, "dist/index.html"));
   }

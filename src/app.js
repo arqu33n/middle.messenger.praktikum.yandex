@@ -1,6 +1,7 @@
 import { loginLink } from "./modules/login/loginTpl";
 import { signinLink } from "./modules/signin/signinTpl";
 import { profileLink } from "./modules/profile/profileTpl";
+import { profileSettingsLink } from "./modules/profile/profileSettingsTpl";
 import { chatLink } from "./modules/chat/chatTpl";
 import { errorLink } from "./modules/error/notFoundTpl";
 
@@ -12,6 +13,8 @@ export const App = () => {
       return loginLink();
     case "/profile":
       return profileLink();
+    case "/profile-settings":
+      return profileSettingsLink();
     case "/chat":
     case "/chat/":
       return chatLink();
