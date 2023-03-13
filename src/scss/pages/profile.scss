@@ -33,6 +33,7 @@ body {
     color: #1e1e1e;
   }
 }
+
 .profile__content {
   min-width: 510px;
   margin-top: 60px;
@@ -71,4 +72,51 @@ body {
 }
 .return {
   @include return;
+}
+.profile__settings {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  min-width: 510px;
+  flex-direction: column;
+
+  label {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    color: #1e1e1e;
+    width: 100%;
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 0px;
+  }
+  div:nth-last-child(2) {
+    border-bottom: none;
+  }
+  .profile__settings-item {
+    outline: none;
+    border-width: 0px;
+    width: 100%;
+    margin-left: 30px;
+    text-align: right;
+  }
+  .profile__settings-item::placeholder {
+    @include authPlaceholder;
+    color: #999999;
+  }
+}
+.profile__settings-button {
+  border-bottom: none !important;
+  width: 100%;
+  margin-top: 30px;
+  a {
+    width: 100%;
+  }
+  button {
+    @include authButton;
+    width: 100%;
+  }
 }

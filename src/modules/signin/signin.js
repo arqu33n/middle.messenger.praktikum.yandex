@@ -1,4 +1,4 @@
-export const signinTemplate = `<div class="container">
+export const signinTemplate = `<main class="container">
     <div class="signin">
       <div class="signin__header">Регистрация</div>
       <form class="signin__form">
@@ -24,4 +24,4 @@ export const signinTemplate = `<div class="container">
         <a class="signin__footer-registration" href="/login">{{signinText}}</a>
       </div>
     </div>
-  </div>`;
+  </main>`;

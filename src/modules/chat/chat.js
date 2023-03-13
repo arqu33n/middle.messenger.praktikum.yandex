@@ -1,4 +1,4 @@
-export const chatTemplate = ` <div class="container">
+export const chatTemplate = ` <main class="container">
     <aside class="chatlist">
       <div class="chatlist__header">
         <a href="/profile" class="profile-link">Профиль</a>
@@ -184,4 +184,4 @@ export const chatTemplate = ` <div class="container">
       </ul>
     </aside>
     <div class="chat__page">Выберите чат чтобы отправить сообщение</div>
-  </div>`;
+  </main>`;
